@@ -1,0 +1,17 @@
+cost_function,Mean,Standard Deviation
+all_time_peak_average,0.7972,0.003898717737923589
+annual_normalized_unserved_energy_total,0.0,0.0
+carbon_emissions_total,0.8308,0.0004472135954999583
+cost_total,0.7696,0.0008944271909999167
+daily_one_minus_load_factor_average,0.908,0.0007071067811865482
+daily_peak_average,0.7283999999999999,0.002073644135332774
+discomfort_cold_delta_average,0.0,0.0
+discomfort_cold_delta_maximum,0.0,0.0
+discomfort_cold_delta_minimum,0.0,0.0
+discomfort_hot_delta_average,0.0,0.0
+discomfort_hot_delta_maximum,0.0,0.0
+discomfort_hot_delta_minimum,0.0,0.0
+electricity_consumption_total,0.8224,0.0005477225575051667
+monthly_one_minus_load_factor_average,0.9443999999999999,0.0005477225575051665
+ramping_average,0.7674,0.002509980079602229
+zero_net_energy,1.1404,0.0008944271909999291

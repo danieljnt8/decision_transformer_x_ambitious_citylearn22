@@ -428,7 +428,7 @@ def run_experiment(seed):
     parser.add_argument("--K", type=int, default=24)
     parser.add_argument("--embed_dim", type=int, default=128)
     parser.add_argument("--n_layer", type=int, default=4)
-    parser.add_argument("--n_head", type=int, default=1)
+    parser.add_argument("--n_head", type=int, default=4)
     parser.add_argument("--activation_function", type=str, default="relu")
     parser.add_argument("--dropout", type=float, default=0.1)
     parser.add_argument("--eval_context_length", type=int, default=20)
@@ -447,8 +447,8 @@ def run_experiment(seed):
     parser.add_argument("--warmup_steps", type=int, default=1)
 
     # pretraining options
-    parser.add_argument("--max_pretrain_iters", type=int, default=40)
-    parser.add_argument("--num_updates_per_pretrain_iter", type=int, default=100) #30
+    parser.add_argument("--max_pretrain_iters", type=int, default=200)
+    parser.add_argument("--num_updates_per_pretrain_iter", type=int, default=100) #30 #100
 
     # finetuning options
     parser.add_argument("--max_online_iters", type=int, default=100) #10
@@ -461,7 +461,7 @@ def run_experiment(seed):
     # environment options
     parser.add_argument("--device", type=str, default="cuda") ##cuda 
     parser.add_argument("--log_to_tb", "-w", type=bool, default=True)
-    parser.add_argument("--save_dir", type=str, default="./exp")
+    parser.add_argument("--save_dir", type=str, default="./exp_4")
     parser.add_argument("--exp_name", type=str, default="default")
 
     args = parser.parse_args()

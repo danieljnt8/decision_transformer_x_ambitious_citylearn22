@@ -107,10 +107,10 @@ def run(path_prefix=None):
             ).to(device=device)
 
     num_envs = 5
-    ep_return = [-6000,-6000,-6000,-6000,-6000]
+    ep_return = [-5000,-5000,-5000,-5000,-5000]
 
     #path_prefix ="exp/2024.08.01/225112-default"
-    with open(f"{path_prefix}/model_30.pt", "rb") as f:
+    with open(f"{path_prefix}/model_70.pt", "rb") as f:
         checkpoint = torch.load(f,map_location=torch.device(device))
 
     model.load_state_dict(checkpoint["model_state_dict"])
@@ -218,8 +218,12 @@ def run(path_prefix=None):
     np.save(path_prefix+"/list_act_array_3.npy",list_act_array)
 
 if __name__ == "__main__":
-    path_prefix = ["exp/2024.08.01/224248-default","exp/2024.08.01/224457-default","exp/2024.08.01/224704-default"
-                   ,"exp/2024.08.01/224908-default","exp/2024.08.01/225112-default"]
+    path_prefix = ["exp_4/2024.10.07/224900-default",
+                   "exp_4/2024.10.07/225954-default",
+                   "exp_4/2024.10.07/231101-default",
+                   "exp_4/2024.10.07/232207-default",
+                   "exp_4/2024.10.07/233322-default"]
+
 
     for prefix_ in path_prefix:
         run(prefix_)
